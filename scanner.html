@@ -2539,6 +2539,21 @@ end_header\n`;
                 e.returnValue = 'You have unsaved scan data. Are you sure you want to leave?';
             }
         });
+    // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                // Create a blob URL for the service worker
+                const blob = new Blob([serviceWorkerContent], { type: 'application/javascript' });
+                const workerURL = URL.createObjectURL(blob);
+                
+                navigator.serviceWorker.register(workerURL)
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(err) {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
     </script>
 </body>
 </html>
