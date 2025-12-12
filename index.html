@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real 3D Scanner Pro - Fixed Camera</title>
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="3D Scanner Pro">
+    
+    <!-- MANIFEST LINK - THIS WAS MISSING -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- For Windows tiles -->
+    <meta name="msapplication-TileColor" content="#6366f1">
+    <meta name="msapplication-TileImage" content="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='70' font-family='Arial' font-size='60' text-anchor='middle' fill='white'>3D</text></svg>">
+    
+    <!-- Simple inline icon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='70' font-family='Arial' font-size='60' text-anchor='middle' fill='white'>3D</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='70' font-family='Arial' font-size='60' text-anchor='middle' fill='white'>3D</text></svg>">
+    
+    <title>3D Scanner Pro</title>
     <style>
         /* ========== RESET & BASE ========== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
